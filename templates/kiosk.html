@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kiosk</title>
+    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+</head>
+<body>
+    <h2>Kiosk Drawing Board</h2>
+
+    <label>Color:</label>
+    <input type="color" id="color" value="#000000">
+
+    <label>Brush Size:</label>
+    <input type="range" id="size" min="1" max="10" value="2">
+
+    <button onclick="clearCanvas()">Clear</button>
+
+    <br><br>
+    <canvas id="canvas" width="800" height="500" style="border:1px solid black;"></canvas>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
